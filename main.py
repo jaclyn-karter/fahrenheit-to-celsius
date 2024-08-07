@@ -11,7 +11,7 @@ def enter_button():
         try:
             global user_entry
             user_input = user_entry.get()
-            degree = float(user_input) - 32 * 5/9
+            degree = (float(user_input) - 32) * 5/9
             degree = round(degree, 2)
             label_degree.configure(text=degree)
         # catch value error
